@@ -1,0 +1,131 @@
+<style>
+  /* Footer Styles */
+  footer {
+    background-color: #212529;
+    color: #f8f9fa;
+    padding: 6rem 0 0;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .footer-logo {
+    text-align: center;
+    margin-bottom: 3rem;
+  }
+
+  .footer-logo-img {
+    height: 50px;
+    width: auto;
+    filter: brightness(0) invert(1);
+    opacity: 0.9;
+  }
+
+  .footer-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 3rem;
+    margin-bottom: 4rem;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0 20px;
+  }
+
+  .footer-section h3 {
+    color: #ffffff;
+    margin-bottom: 1.5rem;
+    font-size: 1.25rem;
+  }
+
+  .footer-section p, 
+  .footer-section a {
+    color: #6c757d;
+    margin-bottom: 0.75rem;
+    display: block;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+
+  .footer-section a:hover {
+    color: #e63946;
+  }
+
+  .social-links {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .social-link {
+    margin-bottom: 0.5rem;
+    color: #f8f9fa !important;
+    transition: color 0.3s ease;
+  }
+
+  .social-link:hover {
+    color: #e63946 !important;
+  }
+
+  .footer-bottom {
+    text-align: center;
+    padding: 1.5rem 0;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    color: #6c757d;
+    font-size: 0.9rem;
+  }
+
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .footer-content {
+      grid-template-columns: 1fr;
+      text-align: center;
+      gap: 2.5rem;
+    }
+
+    .footer-section {
+      margin-bottom: 1.5rem;
+    }
+
+    .social-links {
+      flex-direction: row;
+      justify-content: center;
+      gap: 1.5rem;
+    }
+  }
+
+  @media (max-width: 480px) {
+    .footer-logo-img {
+      height: 40px;
+    }
+  }
+</style>
+
+<footer id="kontakt">
+  <div class="footer-logo">
+    <img src="logo_white.png" alt="WHS Sport Logo" class="footer-logo-img">
+  </div>
+  <div class="footer-content">
+    <div class="footer-section">
+      <h3>Kontaktujte nás</h3>
+      <p><strong>Email:</strong> info@whssport.cz</p>
+      <p><strong>Telefon:</strong> +420 123 456 789</p>
+      <p><strong>Adresa:</strong> Sportovní 123, 100 00 Praha</p>
+    </div>
+    <div class="footer-section">
+      <h3>Otevírací doba</h3>
+      <p>Po-Pá: 9:00 - 18:00</p>
+      <p>So: 9:00 - 12:00</p>
+      <p>Ne: Zavřeno</p>
+    </div>
+    <div class="footer-section">
+      <h3>Sledujte nás</h3>
+      <div class="social-links">
+        <a href="#" class="social-link">Facebook</a>
+        <a href="#" class="social-link">Instagram</a>
+        <a href="#" class="social-link">YouTube</a>
+      </div>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>&copy; 2025 WHS Sport. Všechna práva vyhrazena.</p>
+  </div>
+</footer>
